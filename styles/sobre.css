@@ -1,0 +1,42 @@
+.sobre {
+    background-color: var(--cor-branco);
+    font-family: var(--fonte-texto);
+}
+
+.sobre-content h2 {
+    color: var(--cor-azul1);
+    font-size: 28px;
+    font-weight: 700;
+    margin: 40px 0px 20px 20px;
+}
+
+.sobre-content p {
+    color: var(--cor-azul2);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0px 20px 15px 20px;
+}
+
+.sobre-strong {
+    font-weight: 700;
+}
+
+.sobre-imagem {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.sobre-imagem img {
+    width: 80%;
+    max-width: 750px;
+    height: auto;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.sobre-text p {
+    color: var(--cor-azul2);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0px 20px 15px 20px;
+}

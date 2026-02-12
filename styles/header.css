@@ -1,5 +1,7 @@
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: var(--cor-azul1);
     padding: 18px;
@@ -21,6 +23,58 @@ header {
     display: block;
 }
 
+.nav {
+    display: none;
+}
+
+.nav-responsive {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    background-color: var(--cor-azul1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-responsive.active {
+    display: flex;
+}
+
+.nav a, .nav-responsive a {
+    font-size: 16px;
+    color: var(--cor-branco);
+    padding: 8px 16px;
+    transition: 0.5s;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav a::after,
+.nav-responsive a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-bege);
+    transition: 0.3s ease;
+}
+
+.nav a:hover,
+.nav-responsive a:hover {
+    color: var(--cor-bege);
+}
+
+.nav a:hover::after,
+.nav-responsive a:hover::after {
+    width: 100%;
+}
+
 /* === menu hamburguer === */
 .menu-hamburguer {
     cursor: pointer;
@@ -33,5 +87,18 @@ header {
     background-color: var(--cor-branco);
     margin: 6px 0;
     border-radius: 4px;
+    transition: 0.4s ease;
+}
+
+.change .bar1 {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translateY(-8px) rotate(-45deg);
 }
 /* === /menu hamburguer === */

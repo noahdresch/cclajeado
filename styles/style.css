@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap');
+
+:root {
+  /* colors */
+  --cor-azul1: #3e5666; /* azul petroleo */
+  --cor-azul2: #4e6e81; /* azul suave */
+  --cor-terracota: #a35c3c; /* terracota */
+  --cor-verde: #6d895d; /* verde oliva*/
+  --cor-bege: #d9ccba; /* bege */
+  --cor-branco: #ffffff; /* branco */
+  --cor-preto: #000000; /* preto */
+  
+
+  /* Fontes e tamanhos de texto */
+  --fonte-texto: "Open Sans", sans-serif;
+}

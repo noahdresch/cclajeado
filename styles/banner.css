@@ -1,0 +1,33 @@
+.banner {
+    height: 100vh;
+    background-image: url(../img/imagem1.JPG);
+    background-size: 110%;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    padding: 150px 0px 0px 20px;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* escurece imagem */
+}
+
+.banner-content {
+    position: relative; /* fica acima do overlay */
+    z-index: 2;
+    max-width: 600px;
+}
+
+.banner h1 {
+    color: var(--cor-branco);
+    font-size: 32px;
+    font-family: var(--fonte-texto);
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+}

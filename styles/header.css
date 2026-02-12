@@ -1,0 +1,37 @@
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--cor-azul1);
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-family: var(--fonte-texto);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px; /* controla o tamanho */
+    width: auto;
+    display: block;
+}
+
+/* === menu hamburguer === */
+.menu-hamburguer {
+    cursor: pointer;
+    padding: 8px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 26px;
+    height: 2px;
+    background-color: var(--cor-branco);
+    margin: 6px 0;
+    border-radius: 4px;
+}
+/* === /menu hamburguer === */

@@ -1,0 +1,61 @@
+.escolas1 {
+    background-color: var(--cor-branco);
+    font-family: var(--fonte-texto);
+    padding: 40px 0px;
+}
+
+.escolas1-imagem {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.escolas1-imagem img {
+    width: 80%;
+    max-width: 750px;
+    height: auto;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.escolas1-text h2 {
+    color: var(--cor-azul1);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0px 0px 20px 20px;
+}
+
+.escolas1-text p {
+    color: var(--cor-azul2);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0px 20px 15px 20px;
+}
+
+.escolas1-text strong {
+    font-weight: 700;
+}
+
+.escolas1-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.botao-escolas1 {
+    color: var(--cor-azul2);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid var(--cor-azul1);
+    padding: 15px 30px;
+    border-radius: 10px;
+    gap: 16px;
+    width: 50%;
+}
+
+.botao-escolas1:hover {
+    background-color: var(--cor-azul1);
+    color: var(--cor-branco);
+}

@@ -1,13 +1,14 @@
 .sobre {
     background-color: var(--cor-branco);
     font-family: var(--fonte-texto);
+    padding: 40px 0px;
 }
 
 .sobre-content h2 {
     color: var(--cor-azul1);
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 700;
-    margin: 40px 0px 20px 20px;
+    margin: 0px 0px 20px 20px;
 }
 
 .sobre-content p {

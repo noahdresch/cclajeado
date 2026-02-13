@@ -1,0 +1,76 @@
+.envolvase {
+    background-color: var(--cor-azul1);
+    color: var(--cor-branco);
+    font-family: var(--fonte-texto);
+    padding: 40px 0px;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 16px 0px;
+}
+
+/* 2. Muda a cor de TODAS as bolinhas (inativas) */
+.swiper-pagination-bullet {
+    background: var(--cor-bege) !important;
+    opacity: 0.5; /* Deixa as inativas mais claras */
+}
+
+/* 3. Muda a cor apenas da bolinha ATIVA */
+.swiper-pagination-bullet-active {
+    background: var(--cor-bege) !important;
+    opacity: 1; /* Destaque total para a ativa */
+}
+
+.envolvase-bloco1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.envolvase-bloco1 h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.envolvase-bloco2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.envolvase-bloco2 p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0px;
+}
+
+.envolvase-botao {
+    color: var(--cor-branco);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid var(--cor-bege);
+    padding: 15px 30px;
+    border-radius: 10px;
+    gap: 16px;
+    width: 50%;
+}
+
+.envolvase-botao:hover {
+    background-color: var(--cor-bege);
+    color: var(--cor-azul1);
+}

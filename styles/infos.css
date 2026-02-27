@@ -1,15 +1,15 @@
-.infos {
+.highlights {
     background-color: var(--cor-azul1);
     color: var(--cor-branco);
     font-family: var(--fonte-texto);
     padding: 40px 0px;
 }
 
-.infos-text {
+.highlights__content {
     color: var(--cor-bege);
 }
 
-.infos-titulo {
+.highlights__title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,39 +17,39 @@
     padding: 0px 0px 20px 0px;
 }
 
-.infos-text h2 {
+.highlights__content h2 {
     font-size: 28px;
     font-weight: 700;
 }
 
-.infos-text p {
+.highlights__content p {
     font-size: 18px;
     line-height: 1.6;
     margin: 0px 20px 15px 20px;
 }
 
-.infos-lista {
+.highlights__schedule {
     max-width: 700px;
     margin: 40px auto;
 }
 
-.infos-lista h3 {
+.highlights__schedule h3 {
     font-size: 18px;
     font-weight: 700;
     margin: 0px 0px 20px 20px;
 }
 
-.infos-lista ul {
+.highlights__schedule ul {
     list-style: none;
     padding: 0;
     margin: 0px 0px 0px 20px;
 }
 
-.infos-lista li strong {
+.highlights__schedule li strong {
     font-weight: 700;
 }
 
-.infos-lista li {
+.highlights__schedule li {
     list-style: none;
     font-size: 14px;
     margin-bottom: 10px;
@@ -58,7 +58,7 @@
     padding-left: 20px;
 }
 
-.infos-lista li::before {
+.highlights__schedule li::before {
     content: "";
     position: absolute;
     left: 0;

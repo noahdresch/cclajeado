@@ -1,16 +1,16 @@
-.doacoes {
+.donations {
     background-color: var(--cor-azul1);
     color: var(--cor-branco);
     font-family: var(--fonte-texto);
     padding: 40px 0px;
 }
 
-.doacoes-imagem {
+.donations__image {
     text-align: center;
     margin: 0px 0px 30px 0px;
 }
 
-.doacoes-imagem img {
+.donations__image img {
     width: 80%;
     max-width: 750px;
     height: auto;
@@ -18,24 +18,24 @@
     border-radius: 8px;
 }
 
-.doacoes-text h2 {
+.donations__content h2 {
     font-size: 32px;
     font-weight: 700;
     margin: 0px 0px 20px 20px;
 }
 
-.doacoes-text p {
+.donations__content p {
     font-size: 16px;
     line-height: 1.6;
     margin: 0px 20px 15px 20px;
 }
 
-.doacoes-text h3 {
+.donations__content h3 {
     font-size: 20px;
     font-weight: 500;
     margin: 20px 0px 10px 20px;
 }
 
-.text-bloco2 p {
+.donations__details p {
     margin: 0px 20px 5px 20px;
 }

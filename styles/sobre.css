@@ -1,33 +1,33 @@
-.sobre {
+.about {
     background-color: var(--cor-branco);
     font-family: var(--fonte-texto);
     padding: 40px 0px;
 }
 
-.sobre-content h2 {
+.about__content h2 {
     color: var(--cor-azul1);
     font-size: 32px;
     font-weight: 700;
     margin: 0px 0px 20px 20px;
 }
 
-.sobre-content p {
+.about__content p {
     color: var(--cor-azul2);
     font-size: 16px;
     line-height: 1.6;
     margin: 0px 20px 15px 20px;
 }
 
-.sobre-strong {
+.about__strong {
     font-weight: 700;
 }
 
-.sobre-imagem {
+.about__image {
     text-align: center;
     margin: 30px 0px;
 }
 
-.sobre-imagem img {
+.about__image img {
     width: 80%;
     max-width: 750px;
     height: auto;
@@ -35,7 +35,7 @@
     border-radius: 8px;
 }
 
-.sobre-text p {
+.about__description p {
     color: var(--cor-azul2);
     font-size: 16px;
     line-height: 1.6;

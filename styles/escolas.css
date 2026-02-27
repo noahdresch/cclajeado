@@ -1,15 +1,15 @@
-.escolas1 {
+.schools {
     background-color: var(--cor-branco);
     font-family: var(--fonte-texto);
     padding: 40px 0px;
 }
 
-.escolas1-imagem {
+.schools__image {
     text-align: center;
     margin: 0px 0px 30px 0px;
 }
 
-.escolas1-imagem img {
+.schools__image img {
     width: 80%;
     max-width: 750px;
     height: auto;
@@ -17,32 +17,32 @@
     border-radius: 8px;
 }
 
-.escolas1-text h2 {
+.schools__content h2 {
     color: var(--cor-azul1);
     font-size: 32px;
     font-weight: 700;
     margin: 0px 0px 20px 20px;
 }
 
-.escolas1-text p {
+.schools__content p {
     color: var(--cor-azul2);
     font-size: 16px;
     line-height: 1.6;
     margin: 0px 20px 15px 20px;
 }
 
-.escolas1-text strong {
+.schools__content strong {
     font-weight: 700;
 }
 
-.escolas1-botao {
+.schools__button {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.botao-escolas1 {
+.schools__button-link {
     color: var(--cor-azul2);
     font-size: 16px;
     font-weight: 600;
@@ -55,7 +55,7 @@
     width: 50%;
 }
 
-.botao-escolas1:hover {
+.schools__button-link:hover {
     background-color: var(--cor-azul1);
     color: var(--cor-branco);
 }

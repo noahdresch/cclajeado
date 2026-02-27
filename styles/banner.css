@@ -1,4 +1,4 @@
-.banner {
+.hero {
     height: 50vh;
     background-image: url(../img/imagem1.JPG);
     background-size: auto 100%;
@@ -10,20 +10,20 @@
     position: relative;
 }
 
-.banner::before {
+.hero::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.45); /* escurece imagem */
 }
 
-.banner-content {
+.hero__content {
     position: relative; /* fica acima do overlay */
     z-index: 2;
     max-width: 600px;
 }
 
-.banner h1 {
+.hero h1 {
     color: var(--cor-branco);
     font-size: 32px;
     font-family: var(--fonte-texto);

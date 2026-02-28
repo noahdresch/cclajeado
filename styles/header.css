@@ -1,104 +1,207 @@
-header {
+/* =====================================
+   HEADER BASE (MOBILE FIRST)
+===================================== */
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--cor-azul1);
-    padding: 18px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
-    font-family: var(--fonte-texto);
+
+    padding: 18px;
+    background-color: var(--cor-azul1);
+
+    z-index: 1000;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
+/* =====================================
+   LOGO
+===================================== */
 
-.logo img {
-    height: 60px; /* controla o tamanho */
+.header__logo img {
+    height: 55px;
     width: auto;
     display: block;
 }
 
-.nav {
+
+/* =====================================
+   MENU DESKTOP (ESCONDIDO MOBILE)
+===================================== */
+
+.nav-desktop {
     display: none;
 }
 
-.nav-responsive {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 16px;
-    background-color: var(--cor-azul1);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
 
-.nav-responsive.active {
-    display: flex;
-}
+/* =====================================
+   MENU HAMBURGUER
+===================================== */
 
-.nav a, .nav-responsive a {
-    font-size: 16px;
-    color: var(--cor-branco);
-    padding: 8px 16px;
-    transition: 0.5s;
-    position: relative;
-    text-decoration: none;
-}
-
-.nav a::after,
-.nav-responsive a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--cor-bege);
-    transition: 0.3s ease;
-}
-
-.nav a:hover,
-.nav-responsive a:hover {
-    color: var(--cor-bege);
-}
-
-.nav a:hover::after,
-.nav-responsive a:hover::after {
-    width: 100%;
-}
-
-/* === menu hamburguer === */
 .menu-hamburguer {
     cursor: pointer;
     padding: 8px;
 }
 
-.bar1, .bar2, .bar3 {
+.menu-hamburguer span {
+    display: block;
     width: 26px;
     height: 2px;
-    background-color: var(--cor-branco);
     margin: 6px 0;
+    background-color: var(--cor-branco);
     border-radius: 4px;
     transition: 0.4s ease;
 }
 
-.change .bar1 {
+/* animação X */
+.menu-hamburguer.change span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
 
-.change .bar2 {
+.menu-hamburguer.change span:nth-child(2) {
     opacity: 0;
 }
 
-.change .bar3 {
+.menu-hamburguer.change span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
-/* === /menu hamburguer === */
+
+
+/* =====================================
+   MENU MOBILE DROPDOWN
+===================================== */
+
+.nav-mobile {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    background-color: var(--cor-azul1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.4s ease;
+}
+
+.nav-mobile.active {
+    max-height: 300px;
+}
+
+
+/* =====================================
+   LINKS (GLOBAL)
+===================================== */
+
+.nav-link {
+    position: relative;
+    color: var(--cor-branco);
+    text-decoration: none;
+
+    padding: 14px 0;
+    font-size: 16px;
+
+    transition: color 0.3s ease;
+}
+
+/* linha animada */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--cor-bege);
+
+    transition: width 0.3s ease;
+}
+
+/* link ativo (mobile clique) */
+.nav-link.active {
+    color: var(--cor-bege);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (min-width: 768px) {
+
+    .header {
+        padding: 20px 40px;
+    }
+
+    .header__logo img {
+        height: 60px;
+    }
+
+}
+
+
+/* =====================================
+   DESKTOP
+===================================== */
+
+@media (min-width: 1024px) {
+
+    /* esconde hamburguer */
+    .menu-hamburguer {
+        display: none;
+    }
+
+    /* remove menu mobile */
+    .nav-mobile {
+        display: none;
+    }
+
+    /* mostra menu desktop */
+    .nav-desktop {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* hover animation */
+    .nav-link:hover {
+        color: var(--cor-bege);
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================
+   FULLSCREEN / LARGE SCREENS
+===================================== */
+
+@media (min-width: 1440px) {
+
+    .header {
+        padding: 24px 80px;
+    }
+
+    .nav-desktop {
+        gap: 60px;
+    }
+
+}

@@ -1,0 +1,145 @@
+/* =====================================
+   MOBILE
+===================================== */
+
+.highlights {
+    background-color: var(--cor-azul1);
+    color: var(--cor-branco);
+    font-family: var(--fonte-texto);
+    padding: 40px 0px;
+}
+
+.highlights__content {
+    color: var(--cor-bege);
+}
+
+.highlights__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.highlights__content h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.highlights__content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0px 20px 15px 20px;
+}
+
+.highlights__schedule {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.highlights__schedule h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px 0px 20px 20px;
+}
+
+.highlights__schedule ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px 0px 0px 20px;
+}
+
+.highlights__schedule li strong {
+    font-weight: 700;
+}
+
+.highlights__schedule li {
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+}
+
+.highlights__schedule li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 12px;
+    height: 2px;
+    background-color: var(--cor-branco);
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+
+/* =====================================
+   DESKTOP
+===================================== */
+
+@media (min-width: 1024px) {
+
+    .highlights__content h2 {
+        font-size: 36px;
+    }
+
+    .highlights__content p {
+        font-size: 22px;
+    }
+
+    .highlights__content {
+        text-align: center;
+    }
+
+    .highlights__schedule h3 {
+        font-size: 26px;
+    }
+
+    .highlights__schedule li {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .highlights__schedule {
+        margin: 40px 20px;
+    }
+
+}
+
+
+/* =====================================
+   FULLSCREEN / LARGE SCREENS
+===================================== */
+
+@media (min-width: 1440px) {
+    
+    .highlights__content h2 {
+        font-size: 48px;
+    }
+
+    .highlights__content p {
+        font-size: 26px;
+    }
+
+    .highlights__content {
+        text-align: center;
+    }
+
+    .highlights__schedule h3 {
+        font-size: 34px;
+    }
+
+    .highlights__schedule li {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+
+    .highlights__schedule {
+        margin: 40px 150px;
+    }
+
+}

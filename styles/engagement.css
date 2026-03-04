@@ -1,3 +1,7 @@
+/* =====================================
+   MOBILE
+===================================== */
+
 .engagement {
     background-color: var(--cor-azul1);
     color: var(--cor-branco);
@@ -73,4 +77,63 @@
 .engagement__button:hover {
     background-color: var(--cor-bege);
     color: var(--cor-azul1);
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+
+/* =====================================
+   DESKTOP
+===================================== */
+
+@media (min-width: 1024px) {
+
+    .engagement__header h2 {
+        font-size: 36px;
+    }
+
+    .engagement__header p {
+        font-size: 22px;
+    }
+
+    .engagement__cta p {
+        font-size: 22px;
+    }
+
+    .engagement__button {
+        font-size: 20px;
+    }
+
+    .swiper-wrapper {
+        gap: 5px;
+    }
+
+}
+
+
+/* =====================================
+   FULLSCREEN / LARGE SCREENS
+===================================== */
+
+@media (min-width: 1440px) {
+
+    .engagement__header h2 {
+        font-size: 48px;
+    }
+
+    .engagement__header p {
+        font-size: 26px;
+    }
+
+    .engagement__cta p {
+        font-size: 26px;
+    }
+
+    .engagement__button {
+        font-size: 22px;
+    }
+
 }

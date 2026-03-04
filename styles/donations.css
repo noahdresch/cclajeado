@@ -1,0 +1,108 @@
+/* =====================================
+   MOBILE
+===================================== */
+
+.donations {
+    background-color: var(--cor-azul1);
+    color: var(--cor-branco);
+    font-family: var(--fonte-texto);
+    padding: 40px 0px;
+}
+
+.donations__image {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.donations__image img {
+    width: 80%;
+    max-width: 750px;
+    height: auto;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.donations__content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0px 0px 20px 20px;
+}
+
+.donations__content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0px 20px 15px 20px;
+}
+
+.donations__content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0px 10px 20px;
+}
+
+.donations__details p {
+    margin: 0px 20px 5px 20px;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+
+/* =====================================
+   DESKTOP
+===================================== */
+
+@media (min-width: 1024px) {
+
+    
+
+}
+
+
+/* =====================================
+   FULLSCREEN / LARGE SCREENS
+===================================== */
+
+@media (min-width: 1440px) {
+
+    .donations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: flex-start;
+        padding: 80px 120px;
+    }
+
+    /* TEXTO - coluna 1, linha 1 */
+    .donations__content {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 650px;
+    }
+
+    /* IMAGEM - coluna 2, linha 1 */
+    .donations__image {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .donations__image img {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    /* Remove margens laterais antigas */
+    .donations__content h2,
+    .donations__content p,
+    .donations__content h3,
+    .donations__details p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+}

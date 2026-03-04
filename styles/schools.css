@@ -1,0 +1,136 @@
+/* =====================================
+   MOBILE
+===================================== */
+
+.schools {
+    background-color: var(--cor-branco);
+    font-family: var(--fonte-texto);
+    padding: 40px 0px;
+}
+
+.schools__image {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.schools__image img {
+    width: 80%;
+    max-width: 750px;
+    height: auto;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.schools__content h2 {
+    color: var(--cor-azul1);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0px 0px 20px 20px;
+}
+
+.schools__content p {
+    color: var(--cor-azul2);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0px 20px 15px 20px;
+}
+
+.schools__content strong {
+    font-weight: 700;
+}
+
+.schools__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.schools__button-link {
+    color: var(--cor-azul2);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid var(--cor-azul1);
+    padding: 15px 30px;
+    border-radius: 10px;
+    gap: 16px;
+    width: 50%;
+}
+
+.schools__button-link:hover {
+    background-color: var(--cor-azul1);
+    color: var(--cor-branco);
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+
+/* =====================================
+   DESKTOP
+===================================== */
+
+@media (min-width: 1024px) {
+
+    
+
+}
+
+
+/* =====================================
+   FULLSCREEN / LARGE SCREENS
+===================================== */
+
+@media (min-width: 1440px) {
+
+    .schools {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+        padding: 80px 120px;
+    }
+
+    /* IMAGEM */
+    .schools__image {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .schools__image img {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    /* COLUNA DIREITA (TEXTO + BOTÃO) */
+    .schools__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    /* Remove margens laterais antigas */
+    .schools__content h2,
+    .schools__content p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* BOTÃO CENTRALIZADO */
+    .schools__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .schools__button-link {
+        width: auto;
+        min-width: 250px;
+    }
+
+}
